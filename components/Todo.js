@@ -4,6 +4,14 @@ class ToDo {
     this._templateElement = document.querySelector(selector);
   }
 
+  _formatChecked() {
+    if (this._data.completed) {
+      this._todoLabel.classList.add("todo__label__completed");
+    } else {
+      this._todoLabel.classList.remove("todo__label__completed");
+    }
+  }
+
   _setEventListeners() {
     this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
     this._todoDeleteBtn.addEventListener("click", () => {
@@ -12,6 +20,7 @@ class ToDo {
 
     this._todoCheckboxEl.addEventListener("change", () => {
       this._data.completed = !this._data.completed;
+      this._formatChecked();
     });
   }
 
@@ -47,6 +56,7 @@ class ToDo {
     this._generateCheckboxEl();
     this._setEventListeners();
     this._setDueDate();
+    this._formatChecked();
 
     return this._todoElement;
   }
