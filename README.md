@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+Refactoring this todo app is where I learn object oriented programming principles.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The Simple Todo App allows users to manage their tasks. Users can add new tasks, mark tasks as completed, and delete tasks that are no longer needed. The app provides a clean and intuitive user interface.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This project layers previous lessons with the latest. The focus was to learn OOP principles such as encapsulation, inheritance and polymorphism. Understanding these concepts allows me to leverage object classes and "this."
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://lvlathg33k.github.io/se_project_todo-app/
