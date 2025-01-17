@@ -24,10 +24,18 @@
   cursor: pointer;
 }
 
+.todo__completed:hover {
+  border: 2px solid #000000;
+}
+
 .todo__completed:checked {
   border: none;
-  background-size: contain;
+  background-size: cover;
   background-image: url(../images/checkbox.svg);
+}
+
+.todo__completed:hover:checked {
+  opacity: 0.5;
 }
 
 .todo__name {
@@ -66,8 +74,13 @@
   font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
-  color: #f44;
+  color: rgb(255, 113, 113);
   cursor: pointer;
+}
+
+.todo__delete-btn:hover {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
 }
 
 .todo__delete-btn::before {
